@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mariadb:11.4.2
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_ROOT_PASSWORD: example
+      MARIADB_DATABASE: project_telecom_java
+
+
+
+
