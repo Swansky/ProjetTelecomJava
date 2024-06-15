@@ -1,5 +1,7 @@
 # BatchProcessor
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Swansky/ProjetTelecomJava/maven.yml?branch=main)
+
 ## Introduction
 
 This project is a result of a project for my school. The goal was to create a batch processor that monitors a directory for new CSV files, parses the files to extract user data, and inserts the data into a database.
