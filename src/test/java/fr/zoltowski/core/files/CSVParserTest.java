@@ -7,16 +7,15 @@ import org.junit.jupiter.api.Test;
 
 import java.nio.file.Path;
 import java.text.ParseException;
-import java.time.LocalDate;
+
 import java.util.List;
 
 import static fr.zoltowski.TestUtils.createReimbursementList;
 
 
-class CSVParserTest {
+public class CSVParserTest {
     private static final String CSV_TEST_FILE = "test/users_20100417003500.csv";
     private static final List<Reimbursement> expectedReimbursements;
-
 
     static {
         try {
@@ -27,11 +26,10 @@ class CSVParserTest {
     }
 
 
-
     private final CSVParser csvParser = new CSVParser();
 
     @Test
-    void parse() {
+    public void parse() {
         List<Reimbursement> parse = csvParser.parse(Path.of(CSV_TEST_FILE), Reimbursement::fromCsv);
         Assertions.assertFalse(parse.isEmpty());
         Assertions.assertEquals(expectedReimbursements, parse);

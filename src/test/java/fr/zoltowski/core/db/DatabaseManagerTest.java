@@ -18,7 +18,7 @@ import static fr.zoltowski.TestUtils.FILE_TIME;
 import static fr.zoltowski.TestUtils.createReimbursementList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DatabaseManagerTest {
+public class DatabaseManagerTest {
 
     private final DatabaseManager databaseManager;
     private final Repository<Reimbursement> repository;

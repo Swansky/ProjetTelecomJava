@@ -7,11 +7,11 @@ import java.nio.file.Paths;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DirectoryUtilsTest {
+public class DirectoryUtilsTest {
     private static final String DIRECTORY_PATH_TEST = "test/csv/input";
 
     @Test
-    void createDirectoryIfNotExist() {
+    public void createDirectoryIfNotExist() {
 
         DirectoryUtils.createDirectoryIfNotExist(DIRECTORY_PATH_TEST);
 
