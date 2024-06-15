@@ -55,7 +55,7 @@ Clone the repository and build the project using Maven:
 
 ```bash
 git clone https://github.com/Swansky/ProjetTelecomJava.git
-cd BatchProcessor
+cd ProjetTelecomJava
 mvn clean install
 ```
 
